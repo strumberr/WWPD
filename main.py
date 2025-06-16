@@ -4,6 +4,8 @@ from typing import List
 
 app = FastAPI()
 
+# extra comment because i accidentally merged the pull request
+
 class ModelMetadata(BaseModel):
     """Metadata about the ML model."""
 
@@ -29,7 +31,7 @@ class PredictionRequest(BaseModel):
 
 class PredictionResponse(BaseModel):
     """Output format for prediction results."""
-    
+
     predicted_class: str
     confidence: float
 
